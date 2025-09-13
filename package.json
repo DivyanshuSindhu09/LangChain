@@ -1,0 +1,27 @@
+{
+  "name": "langchain",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DivyanshuSindhu09/LangChain.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/DivyanshuSindhu09/LangChain/issues"
+  },
+  "homepage": "https://github.com/DivyanshuSindhu09/LangChain#readme",
+  "dependencies": {
+    "@langchain/core": "^0.3.75",
+    "@langchain/google-genai": "^0.2.17",
+    "dotenv": "^17.2.2",
+    "langchain": "^0.3.33"
+  }
+}
