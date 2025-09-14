@@ -232,3 +232,241 @@ const chain = prompt.pipe(model);
   }
 })();
 */
+
+/* 
+PS C:\Users\wel\Desktop\langchain> node .\adminjson.js
+[dotenv@17.2.2] injecting env (2) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+📊 Available sheets: [
+  'Classes',
+  'Slots',
+  'Rooms',
+  'Labs',
+  'Teachers',
+  'Unavailability',
+  'LectureRequirements',
+  'Constraints'
+]
+✅ Generated Timetable JSON:
+{
+  "classes": [
+    {
+      "name": "CSE 3rd Year",
+      "subjects": [
+        "IT",
+        "OOP",
+        "COA",
+        "DSA",
+        "OB",
+        "EITK",
+        "PS"
+      ],
+      "lab_subjects": [
+        "IT LAB",
+        "DSA LAB",
+        "OOP LAB"
+      ],
+      "sections": [
+        {
+          "name": "A",
+          "student_count": 84
+        },
+        {
+          "name": "B",
+          "student_count": 84
+        }
+      ]
+    },
+    {
+      "name": "CSE 5th Year",
+      "subjects": [
+        "SE",
+        "DBS",
+        "WIT",
+        "ISE",
+        "ML"
+      ],
+      "lab_subjects": [
+        "WIT LAB",
+        "DBS LAB",
+        "ML LAB"
+      ],
+      "sections": [
+        {
+          "name": "A",
+          "student_count": 80
+        },
+        {
+          "name": "B",
+          "student_count": 78
+        }
+      ]
+    }
+  ],
+  "rooms": [
+    "301",
+    "300",
+    "338",
+    "340"
+  ],
+  "labs": [
+    "308",
+    "339",
+    "337",
+    "335",
+    "311",
+    "333"
+  ],
+  "lab_rooms": {
+    "OOP LAB": [
+      "308",
+      "333"
+    ],
+    "DBS LAB": [
+      "308",
+      "311"
+    ],
+    "DSA LAB": [
+      "339",
+      "311"
+    ],
+    "ML LAB": [
+      "339",
+      "337"
+    ],
+    "IT LAB": [
+      "337",
+      "335"
+    ],
+    "WIT LAB": [
+      "335",
+      "333"
+    ]
+  },
+  "days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday"
+  ],
+  "slots": [
+    "9:00-9:55",
+    "9:55-10:50",
+    "10:50-11:45",
+    "11:45-12:40",
+    "Lunch Break",
+    "2:00-2:55",
+    "2:55-3:50",
+    "3:50-4:45"
+  ],
+  "teachers": {
+    "IT": [
+      "Dr. Karambir",
+      "Mr. Abhishek"
+    ],
+    "OOP": [
+      "Mrs. Manisha",
+      "Mr. Divyansh"
+    ],
+    "COA": [
+      "Mrs. Shikha"
+    ],
+    "DSA": [
+      "Dr. Sona"
+    ],
+    "OB": [
+      "Dr. Sakshi"
+    ],
+    "EITK": [
+      "Dr. Randhir"
+    ],
+    "PS": [
+      "Ms. Neha Kalyan"
+    ],
+    "SE": [
+      "Mr. Pankaj"
+    ],
+    "DBS": [
+      "Mrs. Jyoti"
+    ],
+    "WIT": [
+      "Mrs. Pragya",
+      "Mr. Atul"
+    ],
+    "ISE": [
+      "Dr. Nikhil"
+    ],
+    "ML": [
+      "Mrs. Priya"
+    ]
+  },
+  "lab_teachers": {
+    "IT LAB": [
+      "Dr. Karambir",
+      "Dr. Shikha Bhardwaj"
+    ],
+    "OOP LAB": [
+      "Mrs. Manisha",
+      "Mrs. Shikha"
+    ],
+    "DSA LAB": [
+      "Dr. Sona",
+      "Mr. Rohan"
+    ],
+    "WIT LAB": [
+      "Mrs. Pragya",
+      "Mr. Rohan"
+    ],
+    "DBS LAB": [
+      "Mrs. Jyoti"
+    ],
+    "ML LAB": [
+      "Mrs. Priya",
+      "Mr. Abhishek"
+    ]
+  },
+  "teacher_unavailability": {
+    "Dr. Karambir": [
+      {
+        "day": "Friday",
+        "slot": "9:00-9:55"
+      }
+    ],
+    "Mrs. Manisha": [
+      {
+        "day": "Wednesday",
+        "slot": "3:50-4:45"
+      }
+    ],
+    "Dr. Sona": [
+      {
+        "day": "Friday",
+        "slot": "2:00-2:55"
+      }
+    ]
+  },
+  "lecture_requirements": {
+    "IT": 3,
+    "OOP": 4,
+    "COA": 3,
+    "DSA": 4,
+    "OB": 3,
+    "EITK": 2,
+    "PS": 3,
+    "SE": 3,
+    "DBS": 3,
+    "WIT": 3,
+    "ISE": 3,
+    "ML": 4
+  },
+  "lab_capacity": 30,
+  "constraints": {
+    "max_lectures_per_day_teacher": 5,
+    "max_lectures_per_subject_per_day": 2,
+    "min_lectures_per_day_section": 4,
+    "max_lectures_per_day_section": 6,
+    "lab_session_duration": 2,
+    "distribute_across_week": true
+  }
+}
+*/
