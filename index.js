@@ -26,7 +26,7 @@ const chain = new LLMChain({
 
 //! run the chain
 const res = await chain.run({
-  topic: "Quantum Computing",
+  topic: "Lang chain",
 });
 
 console.log("Gemini Response:\n", res);
